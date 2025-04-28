@@ -3,57 +3,403 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCN Webseite</title>
+    <title>Disruptive KI-Implementierung & Open-Source-Automation</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
-            overflow: hidden;
             padding: 20px;
         }
         header {
-            background: #3498db;
+            background: #50b3a2;
             color: white;
-            padding: 30px;
+            padding: 2rem 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        header h1 {
+        h1 {
             margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        h2 {
+            color: #50b3a2;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #50b3a2;
+            margin-top: 2rem;
+        }
+        h3 {
+            color: #333;
+            margin-top: 1.5rem;
         }
         section {
-            padding: 20px;
             background: white;
-            margin-top: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .highlight {
+            background-color: #e9f7f5;
+            padding: 1rem;
+            border-left: 4px solid #50b3a2;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        strong {
+            font-weight: 600;
+            color: #2c7c6f;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #f1f8f7;
+            color: #2c7c6f;
+            font-weight: 600;
+        }
+        .subheading {
+            font-style: italic;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #50b3a2;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin: 0.25rem 0;
+        }
+        .week-container {
+            margin-top: 1.5rem;
+        }
+        .day-schedule {
+            margin-bottom: 1.5rem;
+        }
+        .day-schedule h4 {
+            margin-bottom: 0.5rem;
+            color: #2c7c6f;
+        }
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .tool-grid > div {
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .schedule-grid, .tool-grid {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                width: 95%;
+            }
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Willkommen auf der MCN-Webseite</h1>
-        <p>Eine einfache Beispielseite (aktualisiert)</p>
+        <div class="container">
+            <h1>Disruptive KI-Implementierung & Open-Source-Automation</h1>
+            <p class="subheading">Intensivkurs für erfahrene Fach- und Führungskräfte</p>
+        </div>
     </header>
     
     <div class="container">
         <section>
-            <h2>Über diese Seite</h2>
-            <p>Dies ist eine aktualisierte HTML-Seite für das MCN-Repository. Die Seite wurde überarbeitet, um sicherzustellen, dass sie korrekt auf GitHub Pages angezeigt wird.</p>
-            <p>Diese Seite verwendet einfaches HTML und CSS für ein grundlegendes, responsives Layout.</p>
+            <h2>Kurzüberblick</h2>
+            <p>
+                Der zweiwöchige Intensivkurs <strong>„Disruptive KI-Implementierung & Open-Source-Automation"</strong> (100 UE) richtet sich an erfahrene Fach- und Führungskräfte. Er kombiniert <strong>Live-Unterricht von 08:15 bis 13:00 Uhr</strong> mit betreutem <strong>Selbststudium von 13:00 bis 16:00 Uhr</strong>. Die Teilnehmenden bauen eine vollständig lokale Entwicklungs- und Produktions­pipeline auf Basis von <strong>bolt.diy</strong>, <strong>Ollama/LM Studio + Open-WebUI</strong>, einem eigens erstellten <strong>MCP-Server</strong>, n8n / Activepieces sowie <strong>Supabase + Stripe</strong> – sämtlich datenschutz- und EU-AI-Act-konform.
+            </p>
         </section>
-        
+
         <section>
-            <h2>GitHub Pages</h2>
-            <p>Diese Seite sollte automatisch unter <a href="https://rmdroid.github.io/mcn/">https://rmdroid.github.io/mcn/</a> erreichbar sein.</p>
-            <p>Die Seite befindet sich im <strong>gh-pages</strong>-Branch, der von GitHub für Pages verwendet wird.</p>
+            <h2>1 Kursprofil</h2>
+            
+            <h3>1.1 Zielgruppe & Voraussetzungen</h3>
+            <ul>
+                <li>IT-Berater:innen, DevOps-, Automations- und App-Entwickler:innen</li>
+                <li>Sicherer Umgang mit Linux-Shell, Docker und gängigen IDEs</li>
+                <li>Erfahrung im produktiven Einsatz von KI und in der Prozess­digitalisierung</li>
+            </ul>
+            
+            <h3>1.2 Kompetenzziele (DQR 5-6)</h3>
+            <table>
+                <tr>
+                    <th>Kompetenzfeld</th>
+                    <th>Lernziel</th>
+                </tr>
+                <tr>
+                    <td><strong>LLM-Ops</strong></td>
+                    <td>Lokale Modelle sicher deployen und fein-tunen (Ollama / LM Studio + Open-WebUI)</td>
+                </tr>
+                <tr>
+                    <td><strong>MCP-Agentik</strong></td>
+                    <td>Agenten und Tool-Bridges über einen eigenen MCP-Server entwickeln</td>
+                </tr>
+                <tr>
+                    <td><strong>Dev-Plattform</strong></td>
+                    <td>Kostenlose IDE-Umgebung mit <strong>bolt.diy</strong> aufsetzen</td>
+                </tr>
+                <tr>
+                    <td><strong>Workflow-Automation</strong></td>
+                    <td>Self-hosted Workflows mit n8n und Activepieces gestalten</td>
+                </tr>
+                <tr>
+                    <td><strong>App-Back-End</strong></td>
+                    <td>Supabase-Datenbank und Stripe FDW in KI-Apps integrieren</td>
+                </tr>
+                <tr>
+                    <td><strong>Governance & Recht</strong></td>
+                    <td>DPIA, GDPR und EU-AI-Act risikobasiert umsetzen</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>2 Compliance & AZAV-Förderfähigkeit</h2>
+            <table>
+                <tr>
+                    <th>AZAV-Kriterium (§ 180 SGB III)</th>
+                    <th>Umsetzung</th>
+                </tr>
+                <tr>
+                    <td><strong>Maßnahmeziel</strong></td>
+                    <td>Berufsqualifikation „AI Automation Engineer"</td>
+                </tr>
+                <tr>
+                    <td><strong>Stundenumfang</strong></td>
+                    <td>80 UE Präsenz + 20 UE Projektarbeit</td>
+                </tr>
+                <tr>
+                    <td><strong>Lernerfolgskontrolle</strong></td>
+                    <td>Praktisches Projekt + schriftlicher Test</td>
+                </tr>
+                <tr>
+                    <td><strong>Wirtschaftlichkeit</strong></td>
+                    <td>Ausschließlicher Einsatz frei verfügbarer Open-Source-Tools</td>
+                </tr>
+                <tr>
+                    <td><strong>Qualitätssicherung</strong></td>
+                    <td>Peer-Reviews, Version-Control, Feedback-Schleifen</td>
+                </tr>
+            </table>
+            <p>Die Maßnahme erfüllt damit die Anforderungen der Bundesagentur für Arbeit an AZAV-zugelassene Weiterbildungen.</p>
+        </section>
+
+        <section>
+            <h2>3 Didaktischer Aufbau</h2>
+            <table>
+                <tr>
+                    <th>Zeit</th>
+                    <th>Form</th>
+                    <th>Lernaktivität</th>
+                </tr>
+                <tr>
+                    <td><strong>08:15 – 13:00</strong></td>
+                    <td>Live-Session</td>
+                    <td>Impulsvortrag, Live-Coding, Guided Lab</td>
+                </tr>
+                <tr>
+                    <td><strong>13:00 – 16:00</strong></td>
+                    <td>Selbststudium</td>
+                    <td>Praxisaufgaben, Mentoring-Chat, Review</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>4 Zwei-Wochen-Curriculum</h2>
+            
+            <div class="week-container">
+                <h3>Woche 1 – Infrastructure & Foundations</h3>
+                
+                <div class="day-schedule">
+                    <h4>Montag</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: Kick-off, GDPR & EU-AI-Act Deep-Dive</div>
+                        <div>Nachmittags-Praxis: DPIA-Checkliste</div>
+                    </div>
+                </div>
+                
+                <div class="day-schedule">
+                    <h4>Dienstag</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: <strong>bolt.diy</strong> lokal/Browser einrichten</div>
+                        <div>Nachmittags-Praxis: Workspace-Vorlage anpassen</div>
+                    </div>
+                </div>
+                
+                <div class="day-schedule">
+                    <h4>Mittwoch</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: Ollama / LM Studio + <strong>Open-WebUI</strong></div>
+                        <div>Nachmittags-Praxis: Modell-Benchmark & Prompt-Tuning</div>
+                    </div>
+                </div>
+                
+                <div class="day-schedule">
+                    <h4>Donnerstag</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: MCP-Spezifikation & Architektur</div>
+                        <div>Nachmittags-Praxis: Quick-Start-Client testen</div>
+                    </div>
+                </div>
+                
+                <div class="day-schedule">
+                    <h4>Freitag</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: Eigener <strong>MCP-Server</strong> für Tool XYZ</div>
+                        <div>Nachmittags-Praxis: API-Endpunkte erstellen</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="week-container">
+                <h3>Woche 2 – Automation & Product Build</h3>
+                
+                <div class="day-schedule">
+                    <h4>Montag</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: n8n Self-Host & Flow-Design</div>
+                        <div>Nachmittags-Praxis: HR-Onboarding-Flow</div>
+                    </div>
+                </div>
+                
+                <div class="day-schedule">
+                    <h4>Dienstag</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: Activepieces & MCP-Flows</div>
+                        <div>Nachmittags-Praxis: SaaS-Automation-Template</div>
+                    </div>
+                </div>
+                
+                <div class="day-schedule">
+                    <h4>Mittwoch</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: VPS-Provisioning, Docker-Compose, CI/CD</div>
+                        <div>Nachmittags-Praxis: GitHub-Actions-Pipeline</div>
+                    </div>
+                </div>
+                
+                <div class="day-schedule">
+                    <h4>Donnerstag</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: Supabase + Stripe FDW-Backend</div>
+                        <div>Nachmittags-Praxis: Zahlungs­fähiges MVP</div>
+                    </div>
+                </div>
+                
+                <div class="day-schedule">
+                    <h4>Freitag</h4>
+                    <div class="schedule-grid">
+                        <div>Vormittag: Abschluss-Hackathon & Prüfung</div>
+                        <div>Nachmittags-Praxis: Pitch & Zertifikat</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>5 Open-Source-Toolstack</h2>
+            
+            <table>
+                <tr>
+                    <th>Kategorie</th>
+                    <th>Tool</th>
+                    <th>Lizenz</th>
+                    <th>Nutzen</th>
+                </tr>
+                <tr>
+                    <td>IDE</td>
+                    <td><strong>bolt.diy</strong></td>
+                    <td>MIT</td>
+                    <td>Browser-basierte Multi-LLM-IDE</td>
+                </tr>
+                <tr>
+                    <td>LLM Runtime</td>
+                    <td>Ollama / LM Studio</td>
+                    <td>MIT</td>
+                    <td>Offline-Inference</td>
+                </tr>
+                <tr>
+                    <td>UI</td>
+                    <td><strong>Open-WebUI</strong></td>
+                    <td>AGPL-3.0</td>
+                    <td>Lokale Chat-Oberfläche</td>
+                </tr>
+                <tr>
+                    <td>Protocol</td>
+                    <td><strong>MCP</strong></td>
+                    <td>Apache-2.0</td>
+                    <td>Standardisierte KI-Schnittstelle</td>
+                </tr>
+                <tr>
+                    <td>Automation</td>
+                    <td>n8n / Activepieces</td>
+                    <td>AGPL-3.0 / Apache-2.0</td>
+                    <td>Self-hosted Workflows</td>
+                </tr>
+                <tr>
+                    <td>Backend</td>
+                    <td>Supabase + Stripe FDW</td>
+                    <td>Apache-2.0</td>
+                    <td>SQL-basierte Payments</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>6 Leistungsnachweis</h2>
+            <ul>
+                <li>Git-Repository mit funktionierendem Agent-, Automation- und App-Stack</li>
+                <li>15-min Präsentation vor Fachjury</li>
+                <li>Multiple-Choice-Test (20 Fragen)</li>
+                <li>Erfolgs­kriterien: ≥ 70 % Punkte und ≥ 80 % Anwesenheit</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Zusammenfassung</h2>
+            <div class="highlight">
+                <p>
+                    Der Kurs bietet eine durchgängige, EU-konforme KI-Pipeline: von der kostenlosen Entwicklungs­umgebung über lokale LLM-Services und einen eigenen MCP-Server bis hin zu automatisierten Workflows und produktions­reifen Back-Ends. Damit qualifizieren sich die Teilnehmenden zielgerichtet für das Berufs­profil <strong>AI Automation Engineer</strong> und erfüllen alle Voraussetzungen für eine AZAV-geförderte Weiterbildung.
+                </p>
+            </div>
         </section>
     </div>
 </body>
